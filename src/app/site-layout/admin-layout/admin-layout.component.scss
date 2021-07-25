@@ -1,0 +1,19 @@
+.header {
+    background: red;
+    align-items: center;
+    padding: 31px;
+}
+
+.nav {
+    ul {
+        width: 100%;
+        li {
+            background-color: green;
+            padding: 11px;
+            border-bottom: 1px solid black;
+            text-align: center;
+            list-style: none;
+            color: white;
+        }
+    }
+}
