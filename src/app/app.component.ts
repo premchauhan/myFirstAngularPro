@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router, Event, NavigationEnd } from '@angular/router';
-//import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
