@@ -12,7 +12,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DefaultComponent } from './default/default.component';
 import { SiteLayoutModule } from './site-layout/site-layout.module';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,9 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     BrowserModule,
     CommonModule,
-    SiteLayoutModule
+    SiteLayoutModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

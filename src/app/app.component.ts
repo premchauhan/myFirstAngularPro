@@ -28,10 +28,6 @@ export class AppComponent {
     return this.isAdminUrl;
   }
 
-  // constructor(
-  //   private route: ActivatedRoute,
-  //   private router: Router,
-    
-  // ) {}
+ 
   
 }

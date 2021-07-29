@@ -1,0 +1,40 @@
+<h5>User Registration</h5>
+<form (ngSubmit)="register()">
+   <div class="col-md-12">
+      <div class="col-md-3">Name</div>
+      <div class="col-md-5"><input type="text" name="name" [(ngModel)]="name" value="">{{name}}</div>
+   </div>
+   <div class="col-md-12">
+      <div class="col-md-3">Email</div>
+      <div class="col-md-5"><input type="text" name="email" [(ngModel)]="email">{{email}}</div>
+   </div>
+   <div class="col-md-12">
+      <div class="col-md-3">Mobile No.</div>
+      <div class="col-md-5"><input type="text" name="mobile" [(ngModel)]="mobile">{{mobile}}</div>
+   </div>
+   <div class="col-md-12">
+      <div class="col-md-3">Gender</div>
+      <div class="col-md-5">
+         <input type="radio"  value="1" name="gender" [(ngModel)]="gender">Male
+         <input type="radio"  value="0" name="gender" [(ngModel)]="gender">Female 
+      </div>
+   </div>
+   <br>
+   <div class="col-md-12">
+      <div class="col-md-3">Education</div>
+      <div class="col-md-5">
+         <input type="checkbox" [checked]="isChecked('ba')" name="ba" value="ba"  >BA
+         <input type="checkbox" [checked]="isChecked('bba')" name="bba" value="bba" >BBA
+         <input type="checkbox" [checked]="isChecked('bca')" name="bca" value="bca" >BCA
+         <input type="checkbox" [checked]="isChecked('mba')" name="mba" value="mba" >MBA
+      </div>
+   </div>
+   <div class="col-md-12">
+      <div class="col-md-3">Password</div>
+      <div class="col-md-5"><input type="password" name="password" [(ngModel)]="password"></div>
+   </div>
+   <br>
+   <div class="col-md-12">
+      <div class="col-md-5"><input type="submit" name="submit" value="Submit"></div>
+   </div>
+</form>
